@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222222;
+  color: aliceblue;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 2rem;
+  background-color: #333;
+  border-radius: 8px;
+  max-width: 700px;
+}
+
+main h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+main #search form {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+main #search input{
+  flex: 1;
+  height: 32px;
+  border-radius: 5px;
+  border: none; 
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+main #search button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 0rem 1rem;
+  height: 32px;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+}
+
+main #tempo-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main #tempo-info .data h2{
+  font-size: 18px;
+  font-family: 'Roboto';
+  margin-bottom: 0.2rem ;
+  font-weight: 400;
+}
+
+main #tempo-info .data span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+@media (max-width: 740px) {
+  main {
+    padding: 2rem;
+    margin: 2rem;
+  }
+
+  main h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  main #search button {
+    padding: 0 0;
+
+  }
+
+  main #search input {
+    padding: 0 2px;
+  }
+}
